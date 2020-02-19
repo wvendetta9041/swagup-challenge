@@ -7,3 +7,4 @@ from . import models
 class AccountAdmin(admin.ModelAdmin):
     list_display = ('name', 'phone')
     search_fields = ('name',)
+    list_filter = ('shipping_country',)
