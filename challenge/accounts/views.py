@@ -46,7 +46,7 @@ def fizz_buzz(request):
     """
     
     # store x query param if it is at request
-    x = request.query_params.get('x', None)
+    x = int(request.query_params.get('x', None))
     if x:
         limit = x
     else:
